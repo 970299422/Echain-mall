@@ -1,0 +1,56 @@
+.index-container {
+    .menu1{
+        .el-select-dropdown{
+            min-width: 100px !important;
+        }
+    }
+    .el-menu.el-menu--horizontal{
+        border: 0;
+    }
+    .el-dialog__header {
+        padding: 0;
+        text-align: center;
+        
+        .el-dialog__title {
+            position: relative;
+            top: -5px;
+        }
+    }
+    .dialog-content{
+        .tab-content {
+            .el-input__inner {
+                border: 1px solid #E1E1E1;
+            }
+            .el-form-item__content{
+                line-height: 0;
+            }
+            .phone-num {
+              .el-select {
+                .el-input__inner {
+                  border-radius: 5px 0 0 5px;
+                  font-size: 12px;
+                  padding: 0 15px;
+                  border-right: 0;
+                } 
+                .el-input__icon{
+                    width: 10px;
+                    font-size: 10px;
+                    position: relative;
+                    top: -2px;
+                }
+              }
+                .el-input__inner {
+                    border-radius: 0 5px 5px 0;
+                } 
+            }
+            .sms-code{
+                .el-input__inner {
+                    border-radius: 5px 0 0 5px;
+                } 
+            }
+          }
+    }
+    .el-submenu__title{
+        border: 0 !important;
+    }
+}

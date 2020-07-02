@@ -1,0 +1,147 @@
+.login-container {
+    width: 300px;
+    background-color: #feffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo-box {
+        width: 177px;
+        height: 41px;
+        margin: 55px 0 52px 0;
+    }
+
+    .dialog-content {
+        width: 100%;
+
+        .tab-header {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 36px;
+
+            li {
+                flex: 1;
+                text-align: center;
+                font-size: 18px;
+                color: #999999;
+                cursor: pointer;
+
+                &.active {
+                    color: #333333;
+                }
+            }
+
+            :first-child {
+                position: relative;
+
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    width: 1px;
+                    height: 14px;
+                    background-color: #E1E1E1;
+                    right: 0;
+                    top: 2px;
+                }
+            }
+        }
+
+        .tab-content {
+            .el-form-item {
+                margin-bottom: 0px;
+            }
+
+            .passwd {
+                margin-bottom: 0;
+            }
+
+            .email-num, .username {
+                margin-bottom: 18px;
+            }
+
+            .phone-num {
+                display: flex;
+                align-items: center;
+                margin-bottom: 18px;
+
+                .el-select {
+                    width: 60px;
+                    height: 39px;
+                    line-height: 39px;
+
+                }
+
+                .el-form-item:last-child {
+                    flex: 1;
+                }
+            }
+
+            .sms-code {
+                display: flex;
+                align-items: center;
+                margin-bottom: 18px;
+
+                .el-button {
+                    width: 66px;
+                    height: 42px;
+                    border-radius: 0 5px 5px 0;
+                    background-color: #38597F;
+                    color: #FFFFFF;
+                    font-size: 14px;
+                }
+
+                .el-form-item:first-child {
+                    flex: 1;
+
+                    input {
+                        border-radius: 5px 0 0 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .form-register {
+        width: 100%;
+    }
+
+    .agreement {
+        display: inline-block;
+        font-size: 12px;
+        text-align: center;
+        margin: 32px 0 0 0;
+        line-height: 20px;
+        color: #999999;
+    }
+
+    .post-btn {
+        width: 100%;
+        background-color: #FFDC5A;
+        color: #333333;
+        font-size: 18px;
+        border: 0;
+        margin-top: 40px;
+    }
+
+    .links {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 32px;
+        font-size: 12px;
+        color: #333;
+        >:first-child {
+            color: #999999;
+        }
+        p {
+            width: 100%;
+            text-align: center;
+        }
+        .sign-in{
+            color: #333333;
+            margin-left: 5px;
+        }
+    }
+}
